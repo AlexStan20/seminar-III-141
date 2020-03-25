@@ -9,7 +9,7 @@ public:
     Fraction operator+(const Fraction&) const;
     Fraction operator-(const Fraction&) const;
     Fraction operator*(const Fraction&) const;
-    Fraction operator/(const Fraction&);
+    Fraction operator/(const Fraction&) const;
 };
 
 #endif //_FRACTION_H_

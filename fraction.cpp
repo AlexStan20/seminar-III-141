@@ -11,7 +11,7 @@ int cmmdc (int a, int b) {
 }
 
 int cmmc (int a, int b) {
-    return (a * b) / cmmdc(a, b); 
+    return (a * b) / cmmdc(a, b);
 }
 
 void Fraction::simplify ( ) {
@@ -57,4 +57,14 @@ Fraction Fraction::operator*(const Fraction& f) const{
 	Fraction result(n, m);
 	return result;
 }
+
+Fraction Fraction::operator/(const Fraction& f) const{
+    // a/b/c/d=a*d/b*c
+    int n, m;
+    n=numarator*f.numitor;
+    m=numitor*f.numarator;
+    Fraction result(n, m);
+    return result;
+}
+
 
