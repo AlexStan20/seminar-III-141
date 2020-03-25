@@ -1,6 +1,8 @@
 #ifndef _FRACTION_H_
 #define _FRACTION_H_
 
+#include <iostream>
+
 class Fraction {
     int numarator, numitor;
     void simplify();
@@ -10,6 +12,7 @@ public:
     Fraction operator-(const Fraction&) const;
     Fraction operator*(const Fraction&) const;
     Fraction operator/(const Fraction&) const;
+    friend std::ostream& operator<< (std::ostream&, Fraction);
 };
 
 #endif //_FRACTION_H_

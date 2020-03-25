@@ -67,4 +67,7 @@ Fraction Fraction::operator/(const Fraction& f) const{
     return result;
 }
 
-
+std::ostream& operator<< (std::ostream& out, Fraction f) {
+    out << f.numarator << "/" << f.numitor;
+    return out;
+}
