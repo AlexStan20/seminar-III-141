@@ -36,4 +36,25 @@ Fraction Fraction::operator+ (const Fraction& f) const {
     Fraction result(n, m);
     return result;
 }
+Fraction Fraction::operator-(const Fraction& f) const {
+	int n, m;
+	if (numitor != f.numitor) {
+		m = cmmc(numitor, f.numitor);
+	}
+	else {
+		m = numitor;
+	}
+	n = numarator * m / numitor - f.numarator * m / f.numitor;
+
+	Fraction result(n, m);
+	return result;
+}
+
+Fraction Fraction::operator*(const Fraction& f) const{
+	int n, m;
+	n = numarator * f.numarator;
+	m = numitor * f.numitor;
+	Fraction result(n, m);
+	return result;
+}
 
