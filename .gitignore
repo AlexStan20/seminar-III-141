@@ -34,3 +34,5 @@
 bin
 obj
 .cbp
+main
+main.exe
